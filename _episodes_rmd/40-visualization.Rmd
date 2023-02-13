@@ -75,12 +75,12 @@ webpage (<https://ggplot2.tidyverse.org>) provides ample documentation.
 every dimension, and a row for every observation. Well-structured data
 will save you lots of time when making figures with `ggplot2`.
 
-ggplot graphics are built step by step by adding new elements. Adding
+ggplot graphics are built step-by-step by adding new elements. Adding
 layers in this fashion allows for extensive flexibility and
-customization of plots.
+customisation of plots.
 
-> The idea behind the Grammar of Graphics it is that you can build every
-graph from the same 3 components: (1) a data set, (2) a coordinate system,
+> The idea behind the Grammar of Graphics is that you can build every
+graph from the same three components: (1) a data set, (2) a coordinate system,
 and (3) geoms — i.e. visual marks that represent data points [^three_comp_ggplot2]
 
 [^three_comp_ggplot2]: Source: [Data Visualization Cheat Sheet](https://raw.githubusercontent.com/rstudio/cheatsheets/main/data-visualization.pdf).
@@ -167,8 +167,8 @@ rna_plot + geom_histogram()
 {: .challenge}
 
 We can observe here that the data are skewed to the right. We can apply
-log2 transformation to have a more symmetric distribution. Note that we
-add here a small constant value (`+1`) to avoid having `-Inf` values
+log2 transformation to have a more symmetric distribution. Note that, here, we
+add a small constant value (`+1`) to avoid having `-Inf` values
 returned for expression values equal to 0.
 
 ```{r log-transfo, cache=FALSE}
@@ -279,7 +279,7 @@ ggplot(data = rna_fc, mapping = aes(x = time_4_vs_0, y = time_8_vs_0)) +
   geom_point(alpha = 0.3, color = "blue")
 ```
 
-Or to color each gene in the plot differently, you could use a vector as
+Or to colour each gene in the plot differently, you could use a vector as
 an input to the argument **color**. `ggplot2` will provide a different
 color corresponding to different values in the vector. Here is an
 example where we color with `gene_biotype`:
@@ -653,7 +653,7 @@ ggplot(data = mean_exp_by_time_sex,
 
 In addition to `theme_bw()`, which changes the plot background to white,
 `ggplot2` comes with several other themes which can be useful to quickly
-change the look of your visualization. The complete list of themes is
+change the look of your visualisation. The complete list of themes is
 available at <https://ggplot2.tidyverse.org/reference/ggtheme.html>.
 `theme_minimal()` and `theme_light()` are popular, and `theme_void()`
 can be useful as a starting point to create a new hand-crafted theme.
@@ -976,8 +976,8 @@ in the saved plot.
 ## Other packages for visualisation
 
 `ggplot2` is a very powerful package that fits very nicely in our *tidy
-data* and *tidy tools* pipeline. There are other visualization packages
-in R that shouldn't be ignored.
+data* and *tidy tools* pipeline. There are other visualisation packages
+in R that should not be ignored.
 
 ### Base graphics
 
